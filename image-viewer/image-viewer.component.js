@@ -220,6 +220,9 @@ class ImageViewer extends Component {
    * 双击
    */
   handleDoubleClick() {
+    const imageZoom = this.refs[`zoom_0`];
+    imageZoom && imageZoom.scale !== 1 && imageZoom.reset && imageZoom.reset();
+    this.props.onDoubleClick(this.handleCancel.bind(this));
     this.props.onDoubleClick(this.handleCancel.bind(this));
   }
   /**
