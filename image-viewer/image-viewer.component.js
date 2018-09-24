@@ -349,18 +349,18 @@ class ImageViewer extends Component {
             </View>
           </TouchableWithoutFeedback>
         </View>
-        <ScrollView
-          ref="scrollview"
-          style={this.styles.moveBox}
-          horizontal={true}
-          pagingEnabled={true}
-          removeClippedSubviews={true}
-          showsVerticalScrollIndicator={false}
-          showsHorizontalScrollIndicator={false}
-          onScroll={this.handleScroll.bind(this)}
-        >
+          {/*<ScrollView*/}
+          {/*ref="scrollview"*/}
+          {/*style={this.styles.moveBox}*/}
+          {/*horizontal={true}*/}
+          {/*pagingEnabled={false}*/}
+          {/*removeClippedSubviews={false}*/}
+          {/*showsVerticalScrollIndicator={false}*/}
+          {/*showsHorizontalScrollIndicator={false}*/}
+          {/*onScroll={this.handleScroll.bind(this)}*/}
+          {/*>*/}
           {ImageElements}
-        </ScrollView>
+          {/*</ScrollView>*/}
         {
           this.props.imageUrls.length > 1 &&
           this.props.renderIndicator(this.state.currentShowIndex + 1, this.props.imageUrls.length)
